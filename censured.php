@@ -19,7 +19,16 @@ echo ($word);
 </head>
 
 <body>
+    <div class="container">
+        <h3>Il tuo testo è: </h3>
+        <p><?= $paragraph ?></p>
 
+        <p>La tua frase contiene <?= strlen($paragraph) ?></p>
+
+        <h2>Testo censurato</h2>
+        <p><?= str_replace($word, "***", $paragraph) ?></p>
+        <p>La tua frase contiene <?= strlen($paragraph) ?></p>
+    </div>
 </body>
 
 </html>
