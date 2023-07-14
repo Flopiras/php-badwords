@@ -6,7 +6,8 @@ $word = $_GET["word"];
 // recupero il paragrafo 
 $paragraph = $_GET["paragraph"];
 
-echo ($word);
+
+$new_word = str_replace($word, "***", $paragraph)
 ?>
 
 <!DOCTYPE html>
@@ -23,11 +24,11 @@ echo ($word);
         <h3>Il tuo testo è: </h3>
         <p><?= $paragraph ?></p>
 
-        <p>La tua frase contiene <?= strlen($paragraph) ?></p>
+        <p>La tua frase contiene <?= strlen($paragraph) ?> parole</p>
 
-        <h2>Testo censurato</h2>
-        <p><?= str_replace($word, "***", $paragraph) ?></p>
-        <p>La tua frase contiene <?= strlen($paragraph) ?></p>
+        <h2>Testo censurato :</h2>
+        <p><?= $new_word ?></p>
+        <p>La tua frase contiene <?= strlen($new_word) ?> parole</p>
     </div>
 </body>
 
