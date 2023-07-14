@@ -8,7 +8,9 @@
 </head>
 
 <body>
+    <form action="censured.php" method="$_GET">
 
+    </form>
 </body>
 
 </html>
