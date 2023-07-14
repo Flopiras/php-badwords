@@ -11,20 +11,23 @@
 </head>
 
 <body>
-    <p></p>
-    <form action="./censured.php" method="$_GET">
-        <div>
+    <div class=" my-4 container">
 
-            <label for="word">Inserisci la parola da censurare</label>
-            <input type="text" id="word" name="word">
-        </div>
-        <div>
+        <form action="./censured.php" method="$_GET">
+            <div>
 
-            <label for="paragraph">Scrivi una frase contenente la parola da censurare</label>
-            <textarea id="paragraph" name="paragraph" rows="2" cols="50"></textarea>
-        </div>
-    </form>
+                <label for="word">Inserisci la parola da censurare</label>
+                <input type="text" id="word" name="word">
+            </div>
+            <div class="mt-3">
+                <label for="paragraph">Scrivi una frase contenente la parola da censurare</label>
+                <input type="text" id="paragraph" name="paragraph">
+            </div>
 
+            <button type="submit"> invio</button>
+        </form>
+
+    </div>
 
 </body>
 
