@@ -24,7 +24,7 @@ $new_word = str_replace($word, "***", $paragraph)
 
 <body>
     <div class="container">
-        <h3>Il tuo testo è: </h3>
+        <h3 class="my-3">Il tuo testo è: </h3>
         <p><?= $paragraph ?></p>
 
         <p>La tua frase contiene <?= strlen($paragraph) ?> parole</p>
